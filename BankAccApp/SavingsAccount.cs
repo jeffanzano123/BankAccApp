@@ -22,7 +22,7 @@ namespace BankAccApp
                 return "You can not deposit more than 50000 at once";
             decimal interestAmount = amount * (InterestRate / 100);
             Balance += amount + interestAmount;
-            return $"You have successfully deposited {amount} to {Owner}'s account. New balance is {Balance}.";
+            return $"You have successfully deposited {amount}.";
         }
     }
 }

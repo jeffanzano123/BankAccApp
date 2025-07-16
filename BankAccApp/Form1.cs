@@ -7,8 +7,6 @@ namespace BankAccApp
         {
             InitializeComponent();
         }
-         
-
         private void CreateAccButton_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(OwnerTxt.Text))

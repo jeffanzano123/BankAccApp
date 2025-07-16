@@ -32,7 +32,7 @@ namespace BankAccApp
             if (amount > 50000)
                 return "You can not deposit more than 50000 at once";
             Balance += amount;
-            return "Deposit successfully completed.";
+            return $"You have successfully deposited {amount}.";
         }
 
         public string Withdraw (decimal amount)
@@ -42,7 +42,7 @@ namespace BankAccApp
             if (amount > Balance)
                 return "Insufficient balance";
             Balance -= amount;
-            return "Withdraw successfully completed.";
+            return $"You have successfully withdraw {amount}.";
         }
     }
 }
